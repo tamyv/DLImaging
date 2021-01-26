@@ -9,7 +9,7 @@ def set_datapath(default_path):
         IS_COLAB = True
         if not os.path.isdir('/gdrive'):
             drive.mount('/gdrive')
-        datapath = Path('/gdrive/My Drive')
+        datapath = Path('/gdrive/MyDrive')
         
         subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
 'pytorch-lightning', '--quiet'])
