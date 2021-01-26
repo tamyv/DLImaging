@@ -16,6 +16,6 @@ def set_datapath(default_path):
         
     else:
         IS_COLAB = False
-        datapath = default_path
+        datapath = Path(default_path)
 
     return IS_COLAB, datapath
